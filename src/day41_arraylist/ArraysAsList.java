@@ -7,6 +7,35 @@ import java.util.List;
 
 public class ArraysAsList {
     public static void main(String[] args) {
+
+       List <String> list = new ArrayList<String>(){
+           {
+               add("mango");
+               add("apple");
+               add("banana");
+               add("grapes");
+               remove("mango");
+               add("kiwi");
+               add(3, "strawberry");
+               remove(2);
+           }
+       };
+        System.out.println(list);
+
+        ArrayList<Integer> group = new ArrayList<>();
+        Integer a = 7;
+
+        System.out.println(group.remove(a));
+
+
+
+
+
+
+
+
+
+
         List<Integer> nums = Arrays.asList(23, 45, 23, 645, 234, 456, 2342, 455); //immutable
         System.out.println("nums = " + nums);
       //  nums.add(100); //cant add or remove. get error message - "unsupported operation"
