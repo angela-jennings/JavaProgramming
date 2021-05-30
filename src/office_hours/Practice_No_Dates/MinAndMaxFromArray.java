@@ -1,4 +1,4 @@
-package office_hours;
+package office_hours.Practice_No_Dates;
 
 public class MinAndMaxFromArray {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package office_hours;
+package office_hours.Practice_No_Dates;
 import java.util.Scanner;
 
 public class ScannerNextLine {

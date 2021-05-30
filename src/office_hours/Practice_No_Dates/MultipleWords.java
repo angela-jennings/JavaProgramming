@@ -1,4 +1,4 @@
-package office_hours;
+package office_hours.Practice_No_Dates;
 import java.util.*;
 public class MultipleWords {/* GivenaStringofwords that are separate by commas. Find and print any words that have more than one wordExampleInput: "knife, wooden spoons, plates, cups, forks, pan, pot, trash can,fridge,dish washer”Output: wooden spoonstrash candish washer*/
 
