@@ -32,6 +32,9 @@ public class GroupMembers {
         group3.addMember("Hubby");
         System.out.println("Group name: " + group3.getName() + "\nGroup members: " + group3.getMembers());
         System.out.println("Number of group members: " + group3.getMembers().size());
+        group3.removeMember("Bandit");
+        System.out.println(group3);
+        System.out.println("Number of group members: " + group3.getMembers().size());
 
         System.out.println("-----------------------------------");
 
@@ -55,8 +58,13 @@ public class GroupMembers {
         //print all members not using toString();
         System.out.println("Group 4 members: " + group4.getMembers());
         if(group4.getMembers().contains("Kirkwood")){
-            System.out.println("Kirky Baby is in Group 4");
+            System.out.println("Kirky baby is in group 4");
         }
+
+
+
+
+
 
 
 
