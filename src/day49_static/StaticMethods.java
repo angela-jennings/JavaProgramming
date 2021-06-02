@@ -25,5 +25,6 @@ public class StaticMethods {
         System.out.println("num = " + num);
         System.out.println("count = " + count);
         displayMessage("Hello from instance method");
+
     }
 }

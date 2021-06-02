@@ -1,5 +1,7 @@
 package day49_static;
 
+import java.util.Collections;
+
 public class StaticTest {
     static String word = "java";
     public static void main(String[] args) {
