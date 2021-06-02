@@ -6,6 +6,7 @@ public class MethodOverloading {
         sum(10.5, 10.5);
         sum(5, 15, 15);
         sum("6", "66");
+
     }
 public static void sum(int one, int two){
         int sum = one + two;
