@@ -7,7 +7,7 @@ public class StudentInformation {
         Student st1 = new Student();
         Student st2 = new Student("Angela Jennings", 31, "female");
 
-        System.out.println(st2.toString());
+        System.out.println(st2);
     }
 
 }
