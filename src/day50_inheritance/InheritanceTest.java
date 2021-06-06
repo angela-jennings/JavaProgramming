@@ -24,6 +24,5 @@ public class InheritanceTest {
         s1.schoolName = "Cybertek";
         s1.study();
         System.out.println(s1.name + " attends " + s1.schoolName);
-
     }
 }
