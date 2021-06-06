@@ -18,5 +18,12 @@ public class InheritanceTest {
         t1.talk();
         t1.walk();
         t1.work("Cuddle Buddy");
+
+        Student s1 = new Student();
+        s1.name = "Athena";
+        s1.schoolName = "Cybertek";
+        s1.study();
+        System.out.println(s1.name + " attends " + s1.schoolName);
+
     }
 }
