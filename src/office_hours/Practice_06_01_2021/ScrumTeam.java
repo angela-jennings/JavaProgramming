@@ -27,30 +27,57 @@ public class ScrumTeam {
     String productOwner;
     String scrumMaster;
     String businessAnalyst;
-    ArrayList<Tester> testersList;
-    ArrayList<Developer> devopsList;
+    ArrayList<Tester> allTesters;
+    ArrayList<Developer> allDevelopers;
     int sprintNumber;
 
-    public ScrumTeam(String productOwner, String scrumMaster, String businessAnalyst){
+    public ScrumTeam(String productOwner, String scrumMaster, String businessAnalyst) {
         this.productOwner = productOwner;
         this.scrumMaster = scrumMaster;
         this.businessAnalyst = businessAnalyst;
-        testersList = new ArrayList<>();
-        devopsList = new ArrayList<>();
+        allTesters = new ArrayList<>();
+        allDevelopers = new ArrayList<>();
     }
 
-    public void addTester(Tester tester){
-        this.testersList.add(tester);
-    }
-    public void addTester(Tester ... testers){
-        this.testersList.addAll(Arrays.asList(testers));
-    }
-    public void addDev(Developer developer){
-        this.devopsList.add(developer);
-    }
-    public void addDev(Developer ... developers){
-        this.devopsList.addAll(Arrays.asList(developers));
+    public void addTester(Tester tester) {
+        this.allTesters.add(tester);
     }
 
+    public void addTester(Tester... testers) {
+        this.allTesters.addAll(Arrays.asList(testers));
+    }
 
+    public void addDev(Developer developer) {
+        this.allDevelopers.add(developer);
+    }
+
+    public void addDev(Developer... developers) {
+        this.allDevelopers.addAll(Arrays.asList(developers));
+    }
+
+    public boolean removeTester(int employeeID) {
+        for (int i = 0; i < allTesters.size(); i++) {
+            if (allTesters.get(i).getEmployeeID() == employeeID) {
+                allTesters.remove(i);
+                return true;
+            }
+        }
+ return false;
+    }
+
+    public boolean removeDeveloper(int employeeID){
+        return allDevelopers.removeIf(eachDev -> eachDev.getEmployeeID() == employeeID);
+    }
+
+    @Override
+    public String toString() {
+        return "ScrumTeam{" +
+                "productOwner='" + productOwner + '\'' +
+                ", scrumMaster='" + scrumMaster + '\'' +
+                ", businessAnalyst='" + businessAnalyst + '\'' +
+                ", allTesters=" + allTesters +
+                ", allDevelopers=" + allDevelopers +
+                ", sprintNumber=" + sprintNumber +
+                '}';
+    }
 }
