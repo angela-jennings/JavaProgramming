@@ -1,4 +1,4 @@
-package office_hours.Practice_04_19_2021;
+package office_hours.practice_04_19_2021;
 import java.util.Arrays;
 import java.util.Random;
 

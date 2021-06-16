@@ -1,4 +1,4 @@
-package office_hours.Practice_05_12_2021;
+package office_hours.practice_05_12_2021;
 
 public class BankAccount {
     String accountHolderName;

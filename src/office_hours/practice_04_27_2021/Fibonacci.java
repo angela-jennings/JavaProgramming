@@ -1,4 +1,4 @@
-package office_hours.Practice_04_27_2021;
+package office_hours.practice_04_27_2021;
 
 import java.util.Arrays;
 

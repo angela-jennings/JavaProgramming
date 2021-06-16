@@ -1,6 +1,4 @@
-package office_hours.Practice_05_05_2021;
-
-import java.util.*;
+package office_hours.Practice_No_Dates;
 
 public class ReverseOnlyLetters {
     public static void main(String[] args) {
