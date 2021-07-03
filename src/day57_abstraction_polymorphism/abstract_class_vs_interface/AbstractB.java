@@ -1,0 +1,8 @@
+package day57_abstraction_polymorphism.abstract_class_vs_interface;
+
+public abstract class AbstractB extends AbstractA implements InterfaceA, InterfaceB {
+    @Override
+    public void absMethodA() {
+        System.out.println("absMethodA being overridden in AbstractB class");
+    }
+}
