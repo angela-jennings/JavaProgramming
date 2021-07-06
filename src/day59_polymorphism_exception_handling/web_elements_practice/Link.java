@@ -1,7 +1,7 @@
-package day59_polymorphism_exception_handling;
+package day59_polymorphism_exception_handling.web_elements_practice;
 
 public class Link implements WebElement{
-
+    public static final String TAG_NAME = "@";
     public void getLinkHref(){
         System.out.println("Getting href from link");
     }
